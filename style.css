@@ -63,9 +63,7 @@
 #second {
     transform-origin: 300px 300px;
 
-/*  The following line will give a smoother animation of the hands but make them swing back to zero 
-unless you change the logic for positioning the hands to depend on the browser instead of 
-the date object to update hand position after the browser loads */
-
-/*    transition: transform .5s ease-in-out; */
+/* to eliminate the "zero rewind" effect but make the animation 
+jerkier comment out the next line. */
+    transition: transform .5s ease-in-out; 
 }
